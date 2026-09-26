@@ -1,0 +1,8 @@
+{
+  "name": "Gemini Notebook",
+  "description": "AI-powered multimodal research notebook with sources, Google Tasks & Keep integration, Veo video generation, and real-time voice conversations.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
