@@ -41,3 +41,28 @@ export interface ChatMessage {
 }
 
 export type SummaryPreset = 'executive' | 'deep_dive' | 'actionable' | 'eli5' | 'study_guide';
+
+export interface GoogleUserProfile {
+  sub: string;
+  email: string;
+  name: string;
+  given_name?: string;
+  family_name?: string;
+  picture?: string;
+  email_verified?: boolean;
+}
+
+export interface UserSettings {
+  currentPreset?: SummaryPreset;
+  customFocus?: string;
+  activeTab?: 'summary' | 'chat';
+  theme?: 'light' | 'dark' | 'system';
+}
+
+export interface ChunkItem {
+  id: string;
+  fileId: string;
+  fileName: string;
+  chunkIndex: number;
+  text: string;
+}
